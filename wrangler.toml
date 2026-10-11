@@ -1,0 +1,15 @@
+name = "cfnew"
+main = "worker.js"
+compatibility_date = "2026-01-20"
+
+# KV 命名空间绑定（图形化配置功能需要）
+# 先在 Cloudflare 控制台 → Workers 和 Pages → KV 创建命名空间，
+# 然后把命名空间 ID 填到下面，取消注释后重新部署。
+# kv_namespaces = [
+#   { binding = "C", id = "你的KV命名空间ID" }
+# ]
+
+# 环境变量（可选，也可以部署后在 Cloudflare 控制台 → 设置 → 变量 中配置）
+# [vars]
+# u = "你的UUID"
+# d = "自定义路径"
